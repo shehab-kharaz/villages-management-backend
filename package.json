@@ -1,0 +1,22 @@
+{
+  "name": "villages-management-backend",
+  "version": "1.0.0",
+  "description": "This repository contains the backend implementation for the [Villages Management System](https://github.com/shehab-kharaz/react-villages-management). It is built to support the refactored frontend version developed with React, providing a robust GraphQL API.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "express-graphql": "^0.12.0",
+    "fs": "^0.0.1-security",
+    "graphql": "^16.10.0",
+    "graphql-playground-middleware-express": "^1.7.23",
+    "graphql-type-json": "^0.3.2"
+  }
+}
