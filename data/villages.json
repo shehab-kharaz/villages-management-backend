@@ -1,56 +1,28 @@
 [
   {
-    "name": "jabalia",
-    "region": "new",
-    "landArea": 50,
-    "latitude": 12,
-    "longitude": 12,
-    "image": "https//:www.myWeb.com/myImage.jpeg",
+    "name": "w213",
+    "region": "231",
+    "landArea": 0,
+    "latitude": null,
+    "longitude": null,
+    "image": null,
     "categories": [
-      "cat",
-      "cat2"
+      ""
     ],
     "demographic": {
-      "populationSize": 10050,
+      "populationSize": null,
       "ageDistribution": {
-        "age_0_18": 20,
-        "age_19_35": 10,
-        "age_36_50": 30,
-        "age_51_65": 26,
-        "age_65_plus": 1
+        "age_0_18": null,
+        "age_19_35": null,
+        "age_36_50": null,
+        "age_51_65": null,
+        "age_65_plus": null
       },
       "genderRatio": {
-        "male": 70,
-        "female": 30
+        "male": null,
+        "female": null
       },
-      "populationGrowthRate": 0.4
-    }
-  },
-  {
-    "name": "she",
-    "region": "new",
-    "landArea": 12.8,
-    "latitude": 12,
-    "longitude": 12,
-    "image": "https//:www.myWeb.com/myImage.jpeg",
-    "categories": [
-      "cat",
-      "UrBan"
-    ],
-    "demographic": {
-      "populationSize": 20000,
-      "ageDistribution": {
-        "age_0_18": 20,
-        "age_19_35": 10,
-        "age_36_50": 30,
-        "age_51_65": 26,
-        "age_65_plus": 1
-      },
-      "genderRatio": {
-        "male": 70,
-        "female": 30
-      },
-      "populationGrowthRate": 0.4
+      "populationGrowthRate": null
     }
   }
 ]
