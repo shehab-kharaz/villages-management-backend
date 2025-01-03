@@ -1,4 +1,4 @@
-require('dotenv').config();  
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const { graphqlHTTP } = require('express-graphql');
@@ -10,10 +10,11 @@ const PORT = process.env.PORT || 4000;
 const app = express();
 app.use(cors());
 app.get('/playground', graphqlPlayground({ endpoint: '/graphql' }));
-app.use('/graphql', graphqlHTTP({
+app.use('/graphql', graphqlHTTP((req) => ({
   schema,
   graphiql: true, 
-}));
+  context: { req }, 
+})));
 
 app.listen(PORT, () => {
   console.log(`Hello from backend with port: ${PORT}`);
