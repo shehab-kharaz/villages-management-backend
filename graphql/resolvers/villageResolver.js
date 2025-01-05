@@ -16,6 +16,15 @@ module.exports = {
       const data = await readDataFromFile('VILLAGES');
       return calculateStatistics(data);
     },
+
+    mapVillages: async () => {
+      const data = await readDataFromFile('VILLAGES');
+      return data.map(village => ({
+        name: village.name,
+        latitude: village.latitude,
+        longitude: village.longitude,
+      }));
+    }
   },
 
   Mutation: {
@@ -61,7 +70,7 @@ module.exports = {
           ...village.demographic, 
         },
       };
-      
+
       data[index] = updatedVillage;
       await writeDataToFile('VILLAGES', data);
 

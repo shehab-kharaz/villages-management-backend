@@ -32,12 +32,6 @@ module.exports = gql`
     population: Int
   }
 
-  type Query {
-    villages: [Village]
-    village(name: String!): Village
-    statistics: Statistics
-  }
-
   type GenderRatio {
     male: Float
     female: Float
@@ -84,15 +78,23 @@ module.exports = gql`
     demographic: DemographicInput
   }
 
+  type MapVillage {  
+    name: String!
+    latitude: Float
+    longitude: Float
+  }
+
   type Query {
     villages: [Village]
     village(name: String!): Village
+    statistics: Statistics
+    mapVillages: [MapVillage]  
   }
 
   type Mutation {
-  addVillage(village: VillageInput!): Village
-  updateVillage(name: String!, village: VillageInput!): Village
-  deleteVillage(name: String!): Village
-  updateVillageDemographic(name: String!, village: VillageInput!): Village
+    addVillage(village: VillageInput!): Village
+    updateVillage(name: String!, village: VillageInput!): Village
+    deleteVillage(name: String!): Village
+    updateVillageDemographic(name: String!, village: VillageInput!): Village
   }
 `;
