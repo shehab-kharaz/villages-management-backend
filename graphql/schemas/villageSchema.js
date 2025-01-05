@@ -90,8 +90,9 @@ module.exports = gql`
   }
 
   type Mutation {
-    addVillage(village: VillageInput!): Village
-    updateVillage(name: String!, village: VillageInput!): Village
-    deleteVillage(name: String!): Village
+  addVillage(village: VillageInput!): Village
+  updateVillage(name: String!, village: VillageInput!): Village
+  deleteVillage(name: String!): Village
+  updateVillageDemographic(name: String!, village: VillageInput!): Village
   }
 `;

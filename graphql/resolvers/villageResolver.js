@@ -46,5 +46,26 @@ module.exports = {
       await writeDataToFile('VILLAGES', updatedData);
       return { name };
     },
+
+    updateVillageDemographic: async (_, { name, village }) => {
+      const data = await readDataFromFile('VILLAGES');
+      const index = data.findIndex(v => v.name === name);
+      if (index === -1) {
+        throw new Error(`Village with name ${name} not found`);
+      }
+
+      const updatedVillage = {
+        ...data[index],
+        demographic: {
+          ...data[index].demographic,
+          ...village.demographic, 
+        },
+      };
+      
+      data[index] = updatedVillage;
+      await writeDataToFile('VILLAGES', data);
+
+      return updatedVillage;
+    },
   },
 };

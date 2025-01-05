@@ -4,6 +4,7 @@ const calculateStatistics = (villages) => {
     totalLandArea: 0,
     totalVillages: villages.length,
     totalUrbanAreas: 0,
+    averageLandAreaInSqKm: 0,
     ageDistribution: {
       age_0_18: 0,
       age_19_35: 0,
@@ -22,6 +23,8 @@ const calculateStatistics = (villages) => {
     const { populationSize, ageDistribution, genderRatio } = demographic;
     acc.totalPopulation += populationSize ?? 0;
     acc.totalLandArea += landArea ?? 0;
+    acc.averageLandAreaInSqKm = (acc.totalLandArea/ acc.totalVillages) ?? 0;
+    
     
     if (categories?.some(category => category.toLowerCase() === 'urban')) {
       acc.totalUrbanAreas += 1;
