@@ -4,7 +4,7 @@ const cors = require('cors');
 const { graphqlHTTP } = require('express-graphql');
 const graphqlPlayground = require('graphql-playground-middleware-express').default;
 const schema = require('./graphql/graphqlConfig');
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.MAIN_PORT || 4000;
 
 
 const app = express();

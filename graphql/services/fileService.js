@@ -4,6 +4,7 @@ const path = require('path');
 const FilePaths = {
   USERS: 'data/users.json',
   VILLAGES: 'data/villages.json',
+  IMAGES: 'data/images.json' 
 };
 
 const readDataFromFile = async (fileKey) => {
