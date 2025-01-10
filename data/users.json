@@ -1,0 +1,20 @@
+[
+  {
+    "fullName": "shehabkharaz",
+    "username": "shehab",
+    "password": "$2b$10$6y8u7hID552LO7OMIpWhRO44K3Wmmob477uQ1EmXMR2VbC/WCWGvi",
+    "role": "user"
+  },
+  {
+    "fullName": "newuser",
+    "username": "newuser",
+    "password": "$2b$10$jTSqzn.dRXAGWLq9ehASv.odFi1yuiCAHP3/zYSr06cb3DR5s.C1.",
+    "role": "admin"
+  },
+  {
+    "fullName": "user2",
+    "username": "user2",
+    "password": "$2b$10$X4Gj5Hgeiztuh91XFqioP.JvAg/3SVIJjg8zRrxHkY66BDvt7GZJ2",
+    "role": "user"
+  }
+]
