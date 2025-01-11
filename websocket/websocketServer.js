@@ -1,5 +1,6 @@
 const WebSocket = require('ws');
 const { handleUserLogin, handleUserLogout } = require('./userManager');
+const { handleChat, handleFetchHistory } = require('./chatHandler');
 
 const port = process.env.WEBSOCKET_PORT || 8080;
 const wss = new WebSocket.Server({ port });
@@ -8,11 +9,11 @@ console.log(`Hello from WebSocket server on ws://localhost:${port}`);
 
 wss.on('connection', (ws) => {
   console.log('New client connected');
-
+  
   ws.on('message', (data) => {
     try {
       const message = JSON.parse(data);
-
+      
       switch (message.type) {
         case 'login':
           handleUserLogin(wss, ws, message.username, message.role);
@@ -20,6 +21,13 @@ wss.on('connection', (ws) => {
         case 'logout':
           handleUserLogout(wss, ws);
           break;
+        case 'chat':
+          handleChat(wss, message);
+          break;
+        case 'fetchHistory': 
+          handleFetchHistory(ws, message);
+          break;
+          
         default:
           console.error('unknown message type:', message.type);
       }
