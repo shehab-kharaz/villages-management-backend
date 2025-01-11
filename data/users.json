@@ -1,20 +1,20 @@
 [
   {
-    "fullName": "shehabkharaz",
-    "username": "shehab",
-    "password": "$2b$10$6y8u7hID552LO7OMIpWhRO44K3Wmmob477uQ1EmXMR2VbC/WCWGvi",
-    "role": "user"
-  },
-  {
-    "fullName": "newuser",
-    "username": "newuser",
-    "password": "$2b$10$jTSqzn.dRXAGWLq9ehASv.odFi1yuiCAHP3/zYSr06cb3DR5s.C1.",
+    "fullName": "Shehab-Kharaz",
+    "username": "Shehab-Kharaz",
+    "password": "$2b$10$x.Jam7Cb4x7Htu5pvy9sJuIPicr1slTT1Q5ke1oK5OVJke6hafKCu",
     "role": "admin"
   },
   {
-    "fullName": "user2",
-    "username": "user2",
-    "password": "$2b$10$X4Gj5Hgeiztuh91XFqioP.JvAg/3SVIJjg8zRrxHkY66BDvt7GZJ2",
+    "fullName": "Dr.amjad",
+    "username": "Dr.amjad",
+    "password": "$2b$10$Dw7GBnL1Tgkw5sFLwcgic.CVBv3P9TeMDncgf4LEX1rzSGIzS1RSu",
+    "role": "user"
+  },
+  {
+    "fullName": "Mis.Maison",
+    "username": "Mis.Maison",
+    "password": "$2b$10$qubSRQ1WY.B4Hw2nhGtlG.ERKcs2YDlrSQr9GxPvqSiXkmpCzLVv.",
     "role": "user"
   }
 ]

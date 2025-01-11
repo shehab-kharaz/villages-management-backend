@@ -1,23 +1,105 @@
 [
   {
-    "name": "12",
-    "region": "12",
-    "landArea": 12,
+    "name": "Jabalia",
+    "region": "Gaza Strip",
+    "landArea": 1.4,
     "latitude": 31.5294,
     "longitude": 34.4797,
     "image": null,
     "categories": [
-      ""
+      "urban"
     ],
     "demographic": {
-      "populationSize": 0,
+      "populationSize": 172704,
       "ageDistribution": {
-        "age_0_18": 0
+        "age_0_18": 30,
+        "age_19_35": 300,
+        "age_36_50": 45,
+        "age_51_65": 231,
+        "age_65_plus": 20
       },
       "genderRatio": {
-        "male": 0
+        "male": 86352
       },
-      "populationGrowthRate": 0
+      "populationGrowthRate": 2.3
+    }
+  },
+  {
+    "name": "Qusin",
+    "region": "Nablus",
+    "landArea": 5.2,
+    "latitude": 32.2227,
+    "longitude": 35.2621,
+    "image": null,
+    "categories": [
+      "urban"
+    ],
+    "demographic": {
+      "populationSize": 172704,
+      "ageDistribution": {
+        "age_0_18": 30000,
+        "age_19_35": 45231,
+        "age_36_50": 20500,
+        "age_51_65": 60000,
+        "age_65_plus": 17973
+      },
+      "genderRatio": {
+        "male": 86000,
+        "female": 50000
+      },
+      "populationGrowthRate": 1.6
+    }
+  },
+  {
+    "name": "Rafah",
+    "region": "Gaza Strip",
+    "landArea": 60,
+    "latitude": 31.2968,
+    "longitude": 34.2435,
+    "image": null,
+    "categories": [
+      "rural"
+    ],
+    "demographic": {
+      "populationSize": 172704,
+      "ageDistribution": {
+        "age_0_18": 30000,
+        "age_19_35": 45231,
+        "age_36_50": 20500,
+        "age_51_65": 60000,
+        "age_65_plus": 17973
+      },
+      "genderRatio": {
+        "male": 86000,
+        "female": 50000
+      },
+      "populationGrowthRate": 1.6
+    }
+  },
+  {
+    "name": "Gaza city ",
+    "region": "Gaza Strip",
+    "landArea": 45,
+    "latitude": 31.2436,
+    "longitude": 34.2324,
+    "image": null,
+    "categories": [
+      "rural"
+    ],
+    "demographic": {
+      "populationSize": 172704,
+      "ageDistribution": {
+        "age_0_18": 30000,
+        "age_19_35": 45231,
+        "age_36_50": 20500,
+        "age_51_65": 60000,
+        "age_65_plus": 17973
+      },
+      "genderRatio": {
+        "male": 86000,
+        "female": 50000
+      },
+      "populationGrowthRate": 1.6
     }
   }
 ]
